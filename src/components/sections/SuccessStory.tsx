@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function SuccessStory() {
   return (
@@ -56,8 +57,8 @@ export default function SuccessStory() {
                     <span className="text-muted-foreground text-xs uppercase font-bold tracking-widest">Timeframe</span>
                   </div>
                 </div>
-                <Button size="lg" href="/success-stories">
-                  View More Stories
+                <Button size="lg" asChild>
+                  <Link href="/success-stories">View More Stories</Link>
                 </Button>
               </motion.div>
             </div>

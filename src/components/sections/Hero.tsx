@@ -15,33 +15,26 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block py-1 px-4 rounded-full bg-white/50 border border-black/5 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-6">
-              #1 In Training Now!
-            </span>
-            <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-[0.85] uppercase">
-              Step up Your <br />
-              <span className="text-primary italic">Gym Challenge</span> <br />
-              With us
+            <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-[1.1]">
+              Transform Your Body <br />
+              <span className="text-primary italic">Without Guesswork</span>
             </h1>
             
-            <div className="flex gap-12 mb-12">
-              <div className="flex flex-col">
-                <span className="text-3xl font-black italic">973+</span>
-                <span className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground">Members Joined</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-black italic">140+</span>
-                <span className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground">Expert Coaches</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-black italic">50+</span>
-                <span className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground">Fitness Programs</span>
-              </div>
-            </div>
+            <p className="text-lg font-bold text-foreground/80 mb-6 max-w-2xl leading-relaxed">
+              Stop starting over. Stop wasting time on workouts that don't work.
+            </p>
+          
+            
+            <p className="text-lg font-black mb-10 italic text-foreground">
+              You don't need more motivation. You need a system.
+            </p>
 
-            <div className="flex flex-wrap items-center gap-6">
-              <Button size="xl" asChild className="bg-dark text-white hover:bg-primary px-10">
-                <Link href="#contact">Join Now</Link>
+            <div className="flex flex-wrap items-center gap-4">
+              <Button size="lg" asChild className="bg-dark text-white hover:bg-primary px-8">
+                <Link href="#contact">Claim Your Free Trial</Link>
+              </Button>
+              <Button size="lg" asChild className="bg-dark text-white hover:bg-primary px-8">
+                <Link href="#contact">Book a Free Gym Tour</Link>
               </Button>
             </div>
           </motion.div>
@@ -58,19 +51,8 @@ export default function Hero() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-primary/20 rounded-t-full -z-10" />
             
             {/* The main image in an arch placeholder */}
-            <div className="arch-image relative overflow-hidden border-8 border-white shadow-2xl flex items-center justify-center bg-muted">
-              <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground opacity-50">Fitness Image Placeholder</span>
-              
-              {/* Floating Stat Card */}
-              <div className="absolute top-10 right-0 bg-white p-4 rounded-xl shadow-xl flex items-center gap-4 translate-x-1/4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
-                   <div className="w-3 h-3 bg-primary rounded-sm" />
-                </div>
-                <div>
-                   <p className="text-[10px] font-bold text-muted-foreground uppercase">Calories Burned</p>
-                   <p className="text-lg font-black italic leading-none">252 Kcal</p>
-                </div>
-              </div>
+            <div className="arch-image relative overflow-hidden border-8 border-white shadow-2xl flex items-center justify-center bg-muted bg-[url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80')] bg-cover bg-center">
+              <div className="absolute inset-0 bg-black/30"></div>
             </div>
           </motion.div>
         </div>

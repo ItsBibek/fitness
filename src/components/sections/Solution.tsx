@@ -9,19 +9,22 @@ const programs = [
     type: 'Gym',
     title: 'Muscles And Body Shape',
     desc: 'for some men, muscles are the most important to show how great a man is. then for women muscles make their bodies ideal',
-    color: 'bg-muted'
+    color: 'bg-muted',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80'
   },
   {
     type: 'Yoga',
     title: 'Movement And Therapy',
     desc: 'for some men, muscles are the most important to show how great a man is. then for women muscles make their bodies ideal',
-    color: 'bg-primary/10'
+    color: 'bg-primary/10',
+    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80'
   },
   {
     type: 'Boxing',
     title: 'Strength And Resistance',
     desc: 'for some men, muscles are the most important to show how great a man is. then for women muscles make their bodies ideal',
-    color: 'bg-muted'
+    color: 'bg-muted',
+    image: 'https://images.unsplash.com/photo-1570306656076-e620505cf895?auto=format&fit=crop&q=80'
   }
 ];
 
@@ -49,8 +52,8 @@ export default function Solution() {
               transition={{ delay: i * 0.1 }}
               className="group"
             >
-              <div className={`arch-image relative overflow-hidden mb-8 border-4 border-white shadow-xl flex items-center justify-center ${p.color}`}>
-                 <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground opacity-50">{p.type} Placeholder</span>
+              <div className={`arch-image relative overflow-hidden mb-8 border-4 border-white shadow-xl flex items-center justify-center ${p.color}`} style={{backgroundImage: `url(${p.image})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+                 <div className="absolute inset-0 bg-black/20"></div>
               </div>
               <p className="text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-4">{p.type}</p>
               <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic leading-tight">{p.title}</h4>

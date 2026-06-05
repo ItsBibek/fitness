@@ -36,14 +36,14 @@ export default function Problem() {
         </div>
 
         <div className="lg:w-1/2 flex gap-4">
-          <div className="w-1/3 aspect-[2/3] arch-image bg-dark overflow-hidden relative flex items-center justify-center border-4 border-white shadow-xl">
-             <span className="text-[8px] font-black uppercase tracking-widest text-white/30 text-center px-2">Gym Placeholder</span>
+          <div className="w-1/3 aspect-[2/3] arch-image bg-dark overflow-hidden relative border-4 border-white shadow-xl bg-[url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80')] bg-cover bg-center">
+             <div className="absolute inset-0 bg-black/20"></div>
           </div>
-          <div className="w-1/3 aspect-[2/3] arch-image bg-primary overflow-hidden relative translate-y-12 flex items-center justify-center border-4 border-white shadow-xl">
-             <span className="text-[8px] font-black uppercase tracking-widest text-white/50 text-center px-2">Training Placeholder</span>
+          <div className="w-1/3 aspect-[2/3] arch-image bg-primary overflow-hidden relative translate-y-12 border-4 border-white shadow-xl bg-[url('https://images.unsplash.com/photo-1577221084712-56ceb57e9c77?auto=format&fit=crop&q=80')] bg-cover bg-center">
+             <div className="absolute inset-0 bg-black/20"></div>
           </div>
-          <div className="w-1/3 aspect-[2/3] arch-image bg-dark overflow-hidden relative flex items-center justify-center border-4 border-white shadow-xl">
-             <span className="text-[8px] font-black uppercase tracking-widest text-white/30 text-center px-2">Coach Placeholder</span>
+          <div className="w-1/3 aspect-[2/3] arch-image bg-dark overflow-hidden relative border-4 border-white shadow-xl bg-[url('https://images.unsplash.com/photo-1570306656076-e620505cf895?auto=format&fit=crop&q=80')] bg-cover bg-center">
+             <div className="absolute inset-0 bg-black/20"></div>
           </div>
         </div>
       </div>

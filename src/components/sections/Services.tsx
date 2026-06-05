@@ -7,24 +7,29 @@ import Link from 'next/link';
 
 const services = [
   { 
-    title: 'Cardio & Strength', 
-    icon: Heart, 
-    description: 'Increase your endurance and physical strength by combining cardio with strength exercises.' 
-  },
-  { 
-    title: 'Muscle Building', 
-    icon: Dumbbell, 
-    description: 'Increase your endurance Strength and developing strong muscles and bones to get the ideal body.' 
-  },
-  { 
-    title: 'Stretch & Yoga', 
+    title: 'Weight Loss Program', 
     icon: Zap, 
-    description: 'Stretch your muscles and help your body stay limber Also improve your range fo motion.' 
+    description: 'Burn fat, build habits, and get lean without crash dieting.' 
   },
   { 
-    title: 'Stability Ball 65cm', 
+    title: 'Muscle Building Program', 
+    icon: Dumbbell, 
+    description: 'Structured strength training to build lean, visible muscle.' 
+  },
+  { 
+    title: 'Personal Training', 
     icon: Target, 
-    description: 'Increase your endurance and physical strength by combining cardio with strength exercises.' 
+    description: '1-on-1 coaching for maximum accountability and faster results.' 
+  },
+  { 
+    title: 'Group Classes', 
+    icon: Heart, 
+    description: 'High-energy sessions that keep you motivated and consistent.' 
+  },
+  { 
+    title: 'Nutrition Coaching', 
+    icon: Dumbbell, 
+    description: 'Simple, practical eating plans that support your goal.' 
   },
 ];
 
@@ -35,18 +40,18 @@ export default function Services() {
         <div className="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
           <div className="lg:w-1/2">
             <h2 className="text-5xl md:text-6xl font-black tracking-tighter uppercase leading-[0.9]">
-              Our Training <br />
-              <span className="text-primary italic">Programs</span>
+              Training Options <br />
+              <span className="text-primary italic">Designed for Real Results</span>
             </h2>
           </div>
           <div className="lg:w-1/3">
             <p className="text-muted-foreground text-xs font-bold leading-relaxed">
-              3 special programs that we provide for those fo you who want to hove a healthy and ideal body Choose according to your goals!
+              Whatever your goal—losing fat, building muscle, or staying motivated—we have a program designed to get you real results.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {services.map((service, index) => (
             <motion.div
               key={index}

@@ -10,18 +10,21 @@ const testimonials = [
     name: "Emma Rodriguez",
     role: "Content Marketing",
     quote: "Exceptional service and attention to detail. Everything was handled professionally and efficiently from start to finish.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80",
   },
   {
     id: 2,
     name: "Liam Johnson",
     role: "Fitness Enthusiast",
-    quote: "I’m truly impressed by the quality and consistency. The entire process was smooth, and the results exceeded all expectations.",
+    quote: "I'm truly impressed by the quality and consistency. The entire process was smooth, and the results exceeded all expectations.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80",
   },
   {
     id: 3,
     name: "Sophia Lee",
     role: "Professional Athlete",
     quote: "Fantastic experience! From start to finish, the team was professional, responsive, and genuinely cared about delivering great results.",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80",
   },
 ];
 
@@ -64,6 +67,7 @@ export default function Testimonials() {
                 name={t.name}
                 role={t.role}
                 quote={t.quote}
+                image={t.image}
               />
             </motion.div>
           ))}
